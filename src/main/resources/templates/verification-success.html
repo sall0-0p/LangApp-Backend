@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email Verified!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            place-items: center;
+            min-height: 90vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .emoji {
+            font-size: 80px;
+            color: #28a745; /* Green for success */
+        }
+        h1 {
+            color: #28a745; /* Green for success */
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 25px;
+            background-color: #007bff; /* Primary blue */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Using a checkmark emoji for success -->
+    <div class="emoji">✅</div>
+    <h1>Yay! You confirmed your email.</h1>
+    <p>You can now close this window and log in from the app.</p>
+
+    <a href="javascript:window.close();" class="button">Close Window</a>
+</div>
+</body>
+</html>

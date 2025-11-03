@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Verification Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            place-items: center;
+            min-height: 90vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .emoji {
+            font-size: 80px;
+            color: #dc3545; /* Red for error */
+        }
+        h1 {
+            color: #dc3545;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 25px;
+            background-color: #6c757d; /* A neutral gray */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="emoji">😟</div>
+    <h1>Oh no! Something went wrong.</h1>
+
+    <!--
+      This will display the error message from your controller,
+      like "Token has expired."
+    -->
+    <p th:text="${error} ?: 'An unknown error occurred.'">
+        Your token is invalid or has expired.
+    </p>
+
+    <a href="javascript:window.close();" class="button">Close Window</a>
+</div>
+</body>
+</html>
