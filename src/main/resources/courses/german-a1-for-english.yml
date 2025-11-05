@@ -1,0 +1,28 @@
+identifier: "de-a1-en"
+title: "German A1 for English Speakers"
+originLanguage: "English"
+targetLanguage: "German"
+targetLocale: "de-DE"
+sections:
+  - title: "A1 - The Basics"
+    order: 1
+    level: A1
+    lessons:
+      - identifier: "de-a1-greetings"
+        title: "Common Greetings"
+        order: 1
+        lessonData:
+          vocabulary: # [ "Hallo", "Guten Tag", "Tschüss" ]
+            - target: "Hallo"
+              origin: "Hello"
+              emoji: "👋"
+            - target: "Guten Tag"
+              origin: "Good Afternoon"
+              emoji: "🔆"
+            - target: "Tschüss"
+              origin: "Bye"
+              emoji: "✌️"
+        generationPlan:
+          - taskType: "TranslateWordToMC"
+            count: 1
+            variations: 3
