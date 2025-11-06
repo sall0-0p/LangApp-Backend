@@ -1,0 +1,11 @@
+sectionIdentifier: "de-a1-at-the-market"
+sectionTitle: "At the Market"
+lessons:
+  - identifier: "de-a1-market-lesson-1"
+    title: "Buying Vegetables"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "de-a1-food"
+        taskCount: 5
+      - topicIdentifier: "de-a1-ordering"
+        taskCount: 2

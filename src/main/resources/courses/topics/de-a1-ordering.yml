@@ -1,0 +1,16 @@
+identifier: "de-a1-ordering"
+title: "Order something"
+language: GERMAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "Ich hätte gern...", origin: "I would like..." }
+  - { target: "Was kostet...?", origin: "How much is...?" }
+relatedTopics:
+  - "de-a1-food"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.8
+  TRANSLATE_WORD_FROM_MC: 0.2
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 2

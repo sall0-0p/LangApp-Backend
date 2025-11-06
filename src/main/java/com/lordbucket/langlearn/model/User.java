@@ -1,6 +1,6 @@
 package com.lordbucket.langlearn.model;
 
-import com.lordbucket.langlearn.misc.Role;
+import com.lordbucket.langlearn.model.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

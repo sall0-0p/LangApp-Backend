@@ -7,12 +7,11 @@ import java.util.List;
 
 @Data
 public class SectionConfig {
-    private String title;
-    private int order;
-
-    @JsonProperty("lessons")
+    @JsonProperty("sectionIdentifier")
+    private String sectionIdentifier;
+    @JsonProperty("sectionTitle")
+    private String sectionTitle;
+    @JsonProperty("sectionLevel")
+    private String sectionLevel; // Kept as String for parsing
     private List<LessonConfig> lessons;
-
-    @JsonProperty("level")
-    private String level;
 }

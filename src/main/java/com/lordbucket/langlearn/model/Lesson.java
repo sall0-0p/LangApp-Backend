@@ -1,9 +1,12 @@
 package com.lordbucket.langlearn.model;
 
+import com.lordbucket.langlearn.model.topic.Topic;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
-import java.util.List;
+import java.util.Set;
 
 @Data
 @Entity
@@ -26,6 +29,13 @@ public class Lesson {
     @JoinColumn(name = "section_id")
     private Section section;
 
-    @OneToMany(mappedBy = "lesson", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<GeneratedTask> tasks;
+    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+    @JoinTable(
+            name = "lesson_topics",
+            joinColumns = @JoinColumn(name = "lesson_id"),
+            inverseJoinColumns = @JoinColumn(name = "topic_id")
+    )
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Set<Topic> topics;
 }

@@ -1,6 +1,6 @@
 package com.lordbucket.langlearn.model;
 
-import com.lordbucket.langlearn.misc.Language;
+import com.lordbucket.langlearn.model.enums.Language;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -22,9 +22,11 @@ public class Course {
     @Column(nullable = false)
     private boolean active = false;
 
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Language originLanguage;
 
+    @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Language targetLanguage;
 

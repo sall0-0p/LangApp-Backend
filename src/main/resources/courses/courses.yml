@@ -1,0 +1,6 @@
+- identifier: "de-a1-en"
+  title: "German A1 for English Speakers"
+  originLanguage: "ENGLISH"
+  targetLanguage: "GERMAN"
+  sectionFiles:
+    - "de-a1-at-the-market.yml"

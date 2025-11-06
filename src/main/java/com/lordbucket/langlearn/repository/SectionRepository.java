@@ -7,5 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface SectionRepository extends JpaRepository<Section, Long> {
+    Optional<Section> findByIdentifier(String identifier);
     Optional<Section> findByCourseAndTitle(Course course, String title);
 }

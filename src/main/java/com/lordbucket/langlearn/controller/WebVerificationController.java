@@ -1,6 +1,6 @@
 package com.lordbucket.langlearn.controller;
 
-import com.lordbucket.langlearn.service.UserService;
+import com.lordbucket.langlearn.service.user.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

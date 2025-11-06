@@ -4,7 +4,7 @@ import com.lordbucket.langlearn.dto.req.LoginRequest;
 import com.lordbucket.langlearn.dto.req.RegisterRequest;
 import com.lordbucket.langlearn.dto.res.AuthResponse;
 import com.lordbucket.langlearn.misc.auth.JwtTokenProvider;
-import com.lordbucket.langlearn.service.UserService;
+import com.lordbucket.langlearn.service.user.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
