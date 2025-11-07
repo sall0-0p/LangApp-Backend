@@ -1,0 +1,18 @@
+identifier: "de-a1-ordering-phrases"
+title: "Ordering Phrases"
+language: GERMAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "ich hätte gern...", origin: "I would like..." }
+  - { target: "was kostet...?", origin: "how much is...?" }
+  - { target: "die Speisekarte, bitte", origin: "the menu, please" }
+  - { target: "zahlen, bitte", origin: "the bill, please" }
+relatedTopics:
+  - "de-a1-food-basics"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.3
+  TRANSLATE_WORD_FROM_MC: 0.7
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 2
+  TRANSLATE_WORD_FROM_MC: 4

@@ -1,0 +1,17 @@
+sectionIdentifier: "de-a1-restaurant"
+sectionTitle: "At the Restaurant"
+lessons:
+  - identifier: "de-a1-restaurant-lesson-1"
+    title: "Basic Food"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "de-a1-food-basics"
+        taskCount: 5
+  - identifier: "de-a1-restaurant-lesson-2"
+    title: "Ordering a Meal"
+    order: 2
+    topicComposition:
+      - topicIdentifier: "de-a1-food-basics"
+        taskCount: 2
+      - topicIdentifier: "de-a1-ordering-phrases"
+        taskCount: 4

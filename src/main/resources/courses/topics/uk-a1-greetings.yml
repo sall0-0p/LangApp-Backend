@@ -1,0 +1,20 @@
+identifier: "uk-a1-greetings"
+title: "Ukrainian Greetings"
+language: UKRAINIAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "привіт", origin: "hello (informal)" }
+  - { target: "добрий день", origin: "good day" }
+  - { target: "до побачення", origin: "goodbye" }
+  - { target: "так", origin: "yes" }
+  - { target: "ні", origin: "no" }
+  - { target: "дякую", origin: "thank you" }
+relatedTopics:
+  - "uk-a1-pronouns"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.5
+  TRANSLATE_WORD_FROM_MC: 0.5
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 3

@@ -1,0 +1,19 @@
+identifier: "uk-a1-family"
+title: "Family"
+language: UKRAINIAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "мама", origin: "mom" }
+  - { target: "тато", origin: "dad" }
+  - { target: "брат", origin: "brother" }
+  - { target: "сестра", origin: "sister" }
+relatedTopics:
+  - "uk-a1-pronouns"
+  - "uk-a1-home-items"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.8
+  TRANSLATE_WORD_FROM_MC: 0.2
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 4
+  TRANSLATE_WORD_FROM_MC: 1

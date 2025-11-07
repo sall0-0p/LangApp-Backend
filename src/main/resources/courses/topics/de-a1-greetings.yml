@@ -1,0 +1,20 @@
+identifier: "de-a1-greetings"
+title: "Greetings"
+language: GERMAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "hallo", origin: "hello" }
+  - { target: "guten Tag", origin: "good day" }
+  - { target: "auf Wiedersehen", origin: "goodbye (formal)" }
+  - { target: "Tschüss", origin: "bye (informal)" }
+  - { target: "bitte", origin: "please" }
+  - { target: "danke", origin: "thank you" }
+relatedTopics:
+  - "de-a1-introductions"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.5
+  TRANSLATE_WORD_FROM_MC: 0.5
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 3

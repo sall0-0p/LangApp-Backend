@@ -1,0 +1,17 @@
+sectionIdentifier: "uk-a1-conversation"
+sectionTitle: "Basic Conversation"
+lessons:
+  - identifier: "uk-a1-convo-lesson-1"
+    title: "First Words"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "uk-a1-greetings"
+        taskCount: 5
+  - identifier: "uk-a1-convo-lesson-2"
+    title: "People"
+    order: 2
+    topicComposition:
+      - topicIdentifier: "uk-a1-greetings"
+        taskCount: 2
+      - topicIdentifier: "uk-a1-pronouns"
+        taskCount: 3

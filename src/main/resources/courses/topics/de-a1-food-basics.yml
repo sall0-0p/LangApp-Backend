@@ -1,0 +1,18 @@
+identifier: "de-a1-food-basics"
+title: "Basic Food"
+language: GERMAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "das Brot", origin: "the bread" }
+  - { target: "das Wasser", origin: "the water" }
+  - { target: "der Apfel", origin: "the apple" }
+  - { target: "die Milch", origin: "the milk" }
+relatedTopics:
+  - "de-a1-ordering-phrases"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.8
+  TRANSLATE_WORD_FROM_MC: 0.2
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 4
+  TRANSLATE_WORD_FROM_MC: 1

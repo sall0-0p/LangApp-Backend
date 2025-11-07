@@ -1,0 +1,24 @@
+# Greetings
+- { target: "привіт", origin: "hello (informal)", type: "INTERJECTION" }
+- { target: "добрий день", origin: "good day", type: "PHRASE" }
+- { target: "до побачення", origin: "goodbye", type: "PHRASE" }
+- { target: "так", origin: "yes", type: "PARTICLE" }
+- { target: "ні", origin: "no", type: "PARTICLE" }
+- { target: "дякую", origin: "thank you", type: "INTERJECTION" }
+
+# Pronouns
+- { target: "я", origin: "I", type: "PRONOUN" }
+- { target: "ти", origin: "you (informal)", type: "PRONOUN" }
+- { target: "він", origin: "he", type: "PRONOUN" }
+- { target: "вона", origin: "she", type: "PRONOUN" }
+- { target: "ми", origin: "we", type: "PRONOUN" }
+
+# Family & Home
+- { target: "мама", origin: "mom", type: "NOUN" }
+- { target: "тато", origin: "dad", type: "NOUN" }
+- { target: "брат", origin: "brother", type: "NOUN" }
+- { target: "сестра", origin: "sister", type: "NOUN" }
+- { target: "дім", origin: "house", type: "NOUN" }
+- { target: "стіл", origin: "table", type: "NOUN" }
+- { target: "стілець", origin: "chair", type: "NOUN" }
+- { target: "книга", origin: "book", type: "NOUN" }

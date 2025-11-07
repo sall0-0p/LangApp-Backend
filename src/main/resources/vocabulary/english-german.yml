@@ -1,18 +1,23 @@
-- target: "die Kartoffel"
-  origin: "the potato"
-  type: "NOUN"
-- target: "die Tomate"
-  origin: "the tomato"
-  type: "NOUN"
-- target: "die Bank"
-  origin: "the bank (finance)"
-  type: "NOUN"
-- target: "die Bank"
-  origin: "the bench (furniture)"
-  type: "NOUN"
-- target: "Ich hätte gern..."
-  origin: "I would like..."
-  type: "PHRASE"
-- target: "Was kostet...?"
-  origin: "How much is...?"
-  type: "PHRASE"
+# Greetings
+- { target: "hallo", origin: "hello", type: "INTERJECTION" }
+- { target: "guten Tag", origin: "good day", type: "PHRASE" }
+- { target: "auf Wiedersehen", origin: "goodbye (formal)", type: "PHRASE" }
+- { target: "Tschüss", origin: "bye (informal)", type: "INTERJECTION" }
+- { target: "bitte", origin: "please", type: "PARTICLE" }
+- { target: "danke", origin: "thank you", type: "INTERJECTION" }
+
+# Introductions
+- { target: "ich heiße...", origin: "my name is...", type: "PHRASE" }
+- { target: "ich komme aus...", origin: "I come from...", type: "PHRASE" }
+- { target: "wie heißt du?", origin: "what is your name?", type: "PHRASE" }
+- { target: "das ist...", origin: "this is...", type: "PHRASE" }
+
+# Food & Ordering
+- { target: "das Brot", origin: "the bread", type: "NOUN" }
+- { target: "das Wasser", origin: "the water", type: "NOUN" }
+- { target: "der Apfel", origin: "the apple", type: "NOUN" }
+- { target: "die Milch", origin: "the milk", type: "NOUN" }
+- { target: "ich hätte gern...", origin: "I would like...", type: "PHRASE" }
+- { target: "was kostet...?", origin: "how much is...?", type: "PHRASE" }
+- { target: "die Speisekarte, bitte", origin: "the menu, please", type: "PHRASE" }
+- { target: "zahlen, bitte", origin: "the bill, please", type: "PHRASE" }

@@ -1,0 +1,20 @@
+identifier: "uk-a1-pronouns"
+title: "Personal Pronouns"
+language: UKRAINIAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "я", origin: "I" }
+  - { target: "ти", origin: "you (informal)" }
+  - { target: "він", origin: "he" }
+  - { target: "вона", origin: "she" }
+  - { target: "ми", origin: "we" }
+relatedTopics:
+  - "uk-a1-greetings"
+  - "uk-a1-family"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.7
+  TRANSLATE_WORD_FROM_MC: 0.3
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 2

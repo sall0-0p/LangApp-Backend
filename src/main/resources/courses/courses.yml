@@ -3,4 +3,13 @@
   originLanguage: "ENGLISH"
   targetLanguage: "GERMAN"
   sectionFiles:
-    - "de-a1-at-the-market.yml"
+    - "de-a1-basics.yml"
+    - "de-a1-restaurant.yml"
+
+- identifier: "uk-a1-en"
+  title: "Ukrainian A1 for English Speakers"
+  originLanguage: "ENGLISH"
+  targetLanguage: "UKRAINIAN"
+  sectionFiles:
+    - "uk-a1-conversation.yml"
+    - "uk-a1-family-home.yml"

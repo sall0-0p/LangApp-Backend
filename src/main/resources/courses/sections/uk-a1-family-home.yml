@@ -1,0 +1,17 @@
+sectionIdentifier: "uk-a1-family-home"
+sectionTitle: "Family and Home"
+lessons:
+  - identifier: "uk-a1-family-lesson-1"
+    title: "My Family"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "uk-a1-family"
+        taskCount: 4
+  - identifier: "uk-a1-family-lesson-2"
+    title: "In the House"
+    order: 2
+    topicComposition:
+      - topicIdentifier: "uk-a1-family"
+        taskCount: 2
+      - topicIdentifier: "uk-a1-home-items"
+        taskCount: 3

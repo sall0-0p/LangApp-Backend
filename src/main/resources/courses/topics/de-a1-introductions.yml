@@ -1,0 +1,18 @@
+identifier: "de-a1-introductions"
+title: "Introductions"
+language: GERMAN
+originLanguage: ENGLISH
+level: A1
+vocabulary:
+  - { target: "ich heiße...", origin: "my name is..." }
+  - { target: "ich komme aus...", origin: "I come from..." }
+  - { target: "wie heißt du?", origin: "what is your name?" }
+  - { target: "das ist...", origin: "this is..." }
+relatedTopics:
+  - "de-a1-greetings"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.6
+  TRANSLATE_WORD_FROM_MC: 0.4
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 2
