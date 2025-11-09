@@ -4,6 +4,8 @@ import com.lordbucket.langlearn.dto.req.LoginRequest;
 import com.lordbucket.langlearn.dto.req.RegisterRequest;
 import com.lordbucket.langlearn.dto.res.AuthResponse;
 import com.lordbucket.langlearn.misc.auth.JwtTokenProvider;
+import com.lordbucket.langlearn.model.User;
+import com.lordbucket.langlearn.service.mapper.UserMapper;
 import com.lordbucket.langlearn.service.user.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -18,11 +20,13 @@ public class AuthController {
     private final UserService userService;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
+    private final UserMapper userMapper;
 
-    public AuthController(UserService userService, AuthenticationManager authenticationManager, JwtTokenProvider jwtTokenProvider) {
+    public AuthController(UserService userService, AuthenticationManager authenticationManager, JwtTokenProvider jwtTokenProvider, UserMapper userMapper) {
         this.userService = userService;
         this.authenticationManager = authenticationManager;
         this.jwtTokenProvider = jwtTokenProvider;
+        this.userMapper = userMapper;
     }
 
     /**
@@ -38,6 +42,9 @@ public class AuthController {
         }
     }
 
+    /**
+     * Endpoint for logging in.
+     */
     @PostMapping("/login")
     public ResponseEntity<?> loginUser(@RequestBody LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
@@ -52,5 +59,23 @@ public class AuthController {
         String jwt = jwtTokenProvider.generateToken(authentication);
 
         return ResponseEntity.ok(new AuthResponse(jwt));
+    }
+
+    /**
+     * Endpoint for getting current user.
+     * */
+    @GetMapping("/me")
+    public ResponseEntity<?> getMe(Authentication authentication) {
+        User user = (User) authentication.getPrincipal();
+        return ResponseEntity.ok(userMapper.toDTO(user));
+    }
+
+    /**
+     * Endpoint for logging out.
+     */
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(Authentication authentication) {
+        SecurityContextHolder.clearContext();
+        return ResponseEntity.ok("User logged out successfully.");
     }
 }

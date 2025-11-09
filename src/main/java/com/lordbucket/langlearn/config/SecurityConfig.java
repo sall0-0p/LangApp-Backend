@@ -66,7 +66,9 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authz -> authz
                         // Allow public access to auth endpoints
-                        .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/auth/login").permitAll()
+                        .requestMatchers("/api/auth/register").permitAll()
+                        .requestMatchers("/api/auth/confirm").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         // All other requests must be authenticated
                         .anyRequest().authenticated()
