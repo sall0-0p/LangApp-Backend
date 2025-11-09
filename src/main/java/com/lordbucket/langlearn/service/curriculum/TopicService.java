@@ -1,4 +1,4 @@
-package com.lordbucket.langlearn.service;
+package com.lordbucket.langlearn.service.curriculum;
 
 import com.lordbucket.langlearn.config.yaml.TopicConfig;
 import com.lordbucket.langlearn.config.yaml.VocabIdentifier;
@@ -13,7 +13,7 @@ import com.lordbucket.langlearn.repository.topic.RuleRepository;
 import com.lordbucket.langlearn.repository.topic.TopicRepository;
 import com.lordbucket.langlearn.repository.topic.WeightRepository;
 import com.lordbucket.langlearn.repository.vocabulary.SenseRepository;
-import com.lordbucket.langlearn.service.ai.AiGenerationService;
+import com.lordbucket.langlearn.service.TaskGenerationService;
 import com.lordbucket.langlearn.model.enums.TaskType;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;

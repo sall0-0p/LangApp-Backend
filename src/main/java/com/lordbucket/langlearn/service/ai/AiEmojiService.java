@@ -21,7 +21,7 @@ public class AiEmojiService {
      * Uses Gemini to query most suitable emoji for certain expression.
      */
     public String generateEmojiForString(String expression) {
-        UserMessage message = new UserMessage("Generate one emoji that is supported on most devices for this expression: '" + expression + "', send ONLY emoji.");
+        UserMessage message = new UserMessage("Generate one emoji that is supported on most devices for this expression: '" + expression + "', send ONLY emoji. Avoid gendered emojis that can cause them to become 'some_emoji gender_emoji'");
 
         Prompt prompt = Prompt.builder()
                 .messages(message)

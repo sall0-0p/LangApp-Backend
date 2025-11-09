@@ -28,3 +28,29 @@ Content-Type: application/json
 # This request will automatically use the "auth_token" variable
 GET http://localhost:8080/api/languages
 Authorization: {{auth_token}}
+
+### ------------------------------------
+### 4. Get a list of courses
+GET http://localhost:8080/api/courses
+Authorization: {{auth_token}}
+
+### ------------------------------------
+### 5. Get course with id
+GET http://localhost:8080/api/courses/de-a1-en
+Authorization: {{auth_token}}
+
+### ------------------------------------
+### 6. Get course curriculum with id
+GET http://localhost:8080/api/courses/c/de-a1-en
+Authorization: {{auth_token}}
+
+### ------------------------------------
+### 7. Get lesson data with id
+GET http://localhost:8080/api/lessons/de-a1-basics-lesson-1
+Authorization: {{auth_token}}
+
+### ------------------------------------
+### 8. Get lesson tasks with id
+GET http://localhost:8080/api/lessons/de-a1-basics-lesson-1/tasks
+Authorization: {{auth_token}}
+

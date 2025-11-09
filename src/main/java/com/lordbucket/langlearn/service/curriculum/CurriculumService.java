@@ -1,4 +1,4 @@
-package com.lordbucket.langlearn.service;
+package com.lordbucket.langlearn.service.curriculum;
 
 import com.lordbucket.langlearn.config.yaml.CourseConfig;
 import com.lordbucket.langlearn.config.yaml.LessonConfig;
@@ -63,7 +63,7 @@ public class CurriculumService {
      * Finds or creates a Section, linking it to its parent Course.
      */
     @Transactional
-    public Section syncSection(SectionConfig config, Course course) {
+    public Section syncSection(SectionConfig config, Course course, int orderIndex) {
         Section section = sectionRepository.findByIdentifier(config.getSectionIdentifier())
                 .orElseGet(() -> {
                     Section newSection = new Section();
@@ -73,7 +73,7 @@ public class CurriculumService {
 
         section.setTitle(config.getSectionTitle());
         // We'll just use the number of lessons for order for now.
-        section.setOrderIndex(config.getLessons() != null ? config.getLessons().size() : 0);
+        section.setOrderIndex(orderIndex);
         section.setCourse(course);
 
         return sectionRepository.save(section);

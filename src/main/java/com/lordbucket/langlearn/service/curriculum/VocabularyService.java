@@ -1,4 +1,4 @@
-package com.lordbucket.langlearn.service;
+package com.lordbucket.langlearn.service.curriculum;
 
 import com.lordbucket.langlearn.config.yaml.VocabularyEntryConfig;
 import com.lordbucket.langlearn.model.enums.Language;

@@ -61,8 +61,7 @@ public class TranslateWordFromMCGenerator implements ITaskGenerator {
 
         // Build the POJO
         return new TranslateWordFromMCTask(
-                correctAnswer.getLexeme().getExpression(),
-                correctAnswer.getOriginTranslation(),
+                correctAnswer.toTaskOption(),
                 distractors.stream().map(Sense::toTaskOption).collect(Collectors.toList())
         );
     }

@@ -3,6 +3,7 @@ package com.lordbucket.langlearn.service.user;
 import com.lordbucket.langlearn.dto.req.RegisterRequest;
 import com.lordbucket.langlearn.model.User;
 import com.lordbucket.langlearn.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -32,6 +33,7 @@ public class UserService {
     /**
      * Registers new User, hashes their password and enforces the rest of business logic.
      */
+    @Transactional
     public User registerUser(RegisterRequest dto) {
         if (userRepository.findByEmail(dto.email()).isPresent()) {
             throw new IllegalStateException("Email is already taken!");
@@ -74,6 +76,7 @@ public class UserService {
         return savedUser;
     }
 
+    @Transactional
     public String verifyUser(String token) {
         User user = userRepository.findByVerificationToken(token)
                 .orElseThrow(() -> new IllegalStateException("Invalid verification token!"));

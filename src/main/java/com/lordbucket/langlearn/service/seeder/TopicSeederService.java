@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lordbucket.langlearn.config.yaml.TopicConfig;
 import com.lordbucket.langlearn.model.topic.Topic;
 import com.lordbucket.langlearn.repository.topic.TopicRepository;
-import com.lordbucket.langlearn.service.TopicService;
+import com.lordbucket.langlearn.service.curriculum.TopicService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;

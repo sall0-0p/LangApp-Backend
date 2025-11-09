@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lordbucket.langlearn.config.yaml.VocabularyEntryConfig;
 import com.lordbucket.langlearn.model.enums.Language;
-import com.lordbucket.langlearn.service.VocabularyService;
+import com.lordbucket.langlearn.service.curriculum.VocabularyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;

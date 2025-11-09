@@ -23,7 +23,6 @@ public class GeneratedTask {
     @Enumerated(EnumType.STRING)
     private TaskType taskType;
 
-    @Lob
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "text")
     private String taskData;
 }

@@ -7,7 +7,7 @@ import com.lordbucket.langlearn.config.yaml.LessonConfig;
 import com.lordbucket.langlearn.config.yaml.SectionConfig;
 import com.lordbucket.langlearn.model.Course;
 import com.lordbucket.langlearn.model.Section;
-import com.lordbucket.langlearn.service.CurriculumService;
+import com.lordbucket.langlearn.service.curriculum.CurriculumService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
@@ -56,6 +56,7 @@ public class CurriculumSeederService implements CommandLineRunner {
             try {
                 Course course = curriculumService.syncCourse(courseConfig);
                 log.info("  -> Synced Course: {}", course.getTitle());
+                int sectionOrder = 1;
 
                 for (String sectionFileName : courseConfig.getSectionFiles()) {
                     Resource sectionResource = resolver.getResource("classpath:courses/sections/" + sectionFileName);
@@ -67,8 +68,10 @@ public class CurriculumSeederService implements CommandLineRunner {
                     try (InputStream is = sectionResource.getInputStream()) {
                         SectionConfig sectionConfig = yamlObjectMapper.readValue(is, SectionConfig.class);
 
-                        Section section = curriculumService.syncSection(sectionConfig, course);
+                        Section section = curriculumService.syncSection(sectionConfig, course, sectionOrder);
                         log.info("    -> Synced Section: {}", section.getTitle());
+
+                        sectionOrder++;
 
                         for (LessonConfig lessonConfig : sectionConfig.getLessons()) {
                             curriculumService.syncLesson(lessonConfig, section);

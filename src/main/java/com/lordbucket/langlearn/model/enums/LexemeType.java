@@ -4,4 +4,7 @@ public enum LexemeType {
     NOUN,
     VERB,
     PHRASE,
+    INTERJECTION,
+    PARTICLE,
+    PRONOUN,
 }

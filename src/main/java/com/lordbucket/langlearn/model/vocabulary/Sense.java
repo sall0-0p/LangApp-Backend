@@ -1,6 +1,6 @@
 package com.lordbucket.langlearn.model.vocabulary;
 
-import com.lordbucket.langlearn.dto.task.TaskOption;
+import com.lordbucket.langlearn.dto.model.TaskOption;
 import com.lordbucket.langlearn.model.enums.Language;
 import com.lordbucket.langlearn.model.topic.Topic;
 import jakarta.persistence.*;

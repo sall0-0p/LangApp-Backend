@@ -25,7 +25,7 @@ public class Topic {
     private Long id;
 
     @Column(unique = true, nullable = false)
-    private String identifier; // e.g., "de-topic-food"
+    private String identifier;
 
     @Column(nullable = false)
     private String title;

@@ -9,12 +9,12 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class JacksonConfig {
 
+    @Primary
     @Bean("jsonObjectMapper")
     public ObjectMapper jsonObjectMapper() {
         return new ObjectMapper();
     }
 
-    @Primary
     @Bean("yamlObjectMapper")
     public ObjectMapper yamlObjectMapper() {
         // This returns a special version of ObjectMapper

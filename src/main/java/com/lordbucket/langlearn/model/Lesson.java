@@ -1,5 +1,6 @@
 package com.lordbucket.langlearn.model;
 
+import com.lordbucket.langlearn.model.topic.LessonTopic;
 import com.lordbucket.langlearn.model.topic.Topic;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,22 +21,17 @@ public class Lesson {
     private String title;
 
     @Column(nullable = false)
-    private int orderIndex;
+    private String identifier;
 
     @Column(nullable = false)
-    private String identifier;
+    private int orderIndex;
 
     @ManyToOne
     @JoinColumn(name = "section_id")
     private Section section;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-    @JoinTable(
-            name = "lesson_topics",
-            joinColumns = @JoinColumn(name = "lesson_id"),
-            inverseJoinColumns = @JoinColumn(name = "topic_id")
-    )
+    @OneToMany(mappedBy = "lesson", cascade = CascadeType.ALL, orphanRemoval = true)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Set<Topic> topics;
+    private Set<LessonTopic> topicComposition;
 }

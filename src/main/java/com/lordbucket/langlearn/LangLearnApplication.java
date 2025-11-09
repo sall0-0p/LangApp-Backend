@@ -44,8 +44,7 @@ public class LangLearnApplication {
 
         @Override
         public void run(String... args) {
-            String emoji = aiEmojiService.generateEmojiForString("Hello World!");
-            log.info(emoji);
+            log.info("👋");
         }
     }
 }
