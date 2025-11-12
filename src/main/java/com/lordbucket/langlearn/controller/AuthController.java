@@ -40,19 +40,7 @@ public class AuthController {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
 
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(
-                        registerRequest.username(),
-                        registerRequest.password()
-                )
-        );
-
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-
-        String jwt = jwtTokenProvider.generateToken(authentication);
-        User user = (User) authentication.getPrincipal();
-
-        return ResponseEntity.ok(new AuthResponse(jwt, userMapper.toDTO(user)));
+        return ResponseEntity.ok("Please check your email!");
     }
 
     /**
