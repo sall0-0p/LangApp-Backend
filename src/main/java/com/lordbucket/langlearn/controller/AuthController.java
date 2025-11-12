@@ -36,10 +36,23 @@ public class AuthController {
     public ResponseEntity<?> registerUser(@RequestBody RegisterRequest registerRequest) {
         try {
             userService.registerUser(registerRequest);
-            return ResponseEntity.ok("User registered successfully. Please verify your email.");
         } catch (IllegalStateException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        registerRequest.username(),
+                        registerRequest.password()
+                )
+        );
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        String jwt = jwtTokenProvider.generateToken(authentication);
+        User user = (User) authentication.getPrincipal();
+
+        return ResponseEntity.ok(new AuthResponse(jwt, userMapper.toDTO(user)));
     }
 
     /**
@@ -57,8 +70,9 @@ public class AuthController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
         String jwt = jwtTokenProvider.generateToken(authentication);
+        User user = (User) authentication.getPrincipal();
 
-        return ResponseEntity.ok(new AuthResponse(jwt));
+        return ResponseEntity.ok(new AuthResponse(jwt, userMapper.toDTO(user)));
     }
 
     /**

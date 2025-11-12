@@ -1,4 +1,6 @@
 package com.lordbucket.langlearn.dto.res;
 
-public record AuthResponse(String token) {
+import com.lordbucket.langlearn.dto.model.UserDTO;
+
+public record AuthResponse(String token, UserDTO user) {
 }
