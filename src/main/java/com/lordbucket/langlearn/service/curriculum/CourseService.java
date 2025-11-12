@@ -4,6 +4,7 @@ import com.lordbucket.langlearn.dto.model.CourseDTO;
 import com.lordbucket.langlearn.dto.model.CourseSummaryDTO;
 import com.lordbucket.langlearn.dto.model.CurriculumDTO;
 import com.lordbucket.langlearn.model.Course;
+import com.lordbucket.langlearn.model.User;
 import com.lordbucket.langlearn.model.enums.Language;
 import com.lordbucket.langlearn.repository.CourseRepository;
 import com.lordbucket.langlearn.service.mapper.CourseMapper;
@@ -37,11 +38,11 @@ public class CourseService {
      * Retrieves list of all (active) courses.
      */
     @Transactional
-    public List<CourseSummaryDTO> getAllActiveCourses() {
+    public List<CourseSummaryDTO> getAllActiveCourses(User user) {
         return courseRepository
                 .findAll()
                 .stream()
-                .map(courseMapper::getSummaryDTO)
+                .map(course -> courseMapper.toSummaryDTO(course, user))
                 .toList();
     }
 
@@ -49,11 +50,11 @@ public class CourseService {
      * Retrieves list of all courses with given origin language.
      */
     @Transactional
-    public List<CourseSummaryDTO> getAllCoursesForLanguage(Language language) {
+    public List<CourseSummaryDTO> getAllCoursesForLanguage(Language language, User user) {
         return courseRepository
                 .findAllByOriginLanguage(language)
                 .stream()
-                .map(courseMapper::getSummaryDTO)
+                .map(course -> courseMapper.toSummaryDTO(course, user))
                 .toList();
     }
 
@@ -61,21 +62,29 @@ public class CourseService {
      * Returns details about the course (without full list of lessons).
      */
     @Transactional
-    public CourseDTO getCourseDetails(String identifier) {
+    public CourseDTO getCourseDetails(String identifier, User user) {
         Optional<Course> course = courseRepository.findByIdentifier(identifier);
 
         // Return course DTO or null.
-        return course.map(courseMapper::getDTO).orElse(null);
+        if (course.isPresent()) {
+            return course.map(course1 -> courseMapper.toDTO(course.get(), user)).get();
+        } else {
+            return null;
+        }
     }
 
     /**
      * Returns details about the course (with full list of lessons).
      */
     @Transactional
-    public CurriculumDTO getCourseCurriculum(String identifier) {
+    public CurriculumDTO getCourseCurriculum(String identifier, User user) {
         Optional<Course> course = courseRepository.findByIdentifier(identifier);
 
         // Return course curriculum or null.
-        return course.map(courseMapper::getCurriculumDTO).orElse(null);
+        if (course.isPresent()) {
+            return course.map(course1 -> courseMapper.getCurriculumDTO(course1, user)).orElse(null);
+        } else {
+            return null;
+        }
     }
 }

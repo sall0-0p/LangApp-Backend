@@ -3,6 +3,7 @@ package com.lordbucket.langlearn.service.curriculum;
 import com.lordbucket.langlearn.dto.model.LessonDTO;
 import com.lordbucket.langlearn.dto.model.TaskDTO;
 import com.lordbucket.langlearn.model.Lesson;
+import com.lordbucket.langlearn.model.User;
 import com.lordbucket.langlearn.model.enums.TaskType;
 import com.lordbucket.langlearn.model.task.GeneratedTask;
 import com.lordbucket.langlearn.model.topic.LessonTopic;
@@ -34,22 +35,21 @@ public class LessonService {
     }
 
     @Transactional
-    public LessonDTO getLessonByIdentifier(String identifier) {
+    public LessonDTO getLessonByIdentifier(String identifier, User user) {
         Optional<Lesson> lesson = lessonRepository.findByIdentifier(identifier);
 
-        if (lesson.isPresent()) {
-            return lesson.map(lessonMapper::toDTO).get();
-        } else {
-            return null;
-        }
+        return lesson.map(lesson1 -> lessonMapper.toDTO(lesson1, user)).orElseThrow();
     }
 
     /**
      * Returns list of generated tasks in database for specific lesson. Abides by rules like task counts and weights.
-     * @param lesson - lesson tasks are going to be generated for
+     * @param identifier - identifier of lesson tasks are going to be generated for
      */
     @Transactional
-    public List<TaskDTO> getTasksForLesson(Lesson lesson) {
+    public List<TaskDTO> getTasksForLesson(String identifier) {
+        Lesson lesson = lessonRepository.findByIdentifier(identifier)
+                .orElseThrow();
+
         Set<LessonTopic> compositionRules = lesson.getTopicComposition();
         List<GeneratedTask> finalTaskList = new ArrayList<>();
 

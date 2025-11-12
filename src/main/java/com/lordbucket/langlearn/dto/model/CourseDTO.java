@@ -9,7 +9,8 @@ public record CourseDTO(
         String title,
         Language originLanguage,
         Language targetLanguage,
-        List<SectionSummaryDTO> sections
+        List<SectionSummaryDTO> sections,
+        boolean enrolled
 ) {
 
 }

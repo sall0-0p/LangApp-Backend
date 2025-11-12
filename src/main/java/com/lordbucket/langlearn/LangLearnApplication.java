@@ -1,14 +1,11 @@
 package com.lordbucket.langlearn;
 
 import com.lordbucket.langlearn.dto.task.TranslateWordToMCTask;
-import com.lordbucket.langlearn.service.ai.AiEmojiService;
 import com.lordbucket.langlearn.service.ai.AiSchemaService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -36,10 +33,8 @@ public class LangLearnApplication {
 
     @Component
     public static class HelloRunner implements CommandLineRunner {
-        private final AiEmojiService aiEmojiService;
 
-        public HelloRunner(AiEmojiService aiEmojiService) {
-            this.aiEmojiService = aiEmojiService;
+        public HelloRunner() {
         }
 
         @Override

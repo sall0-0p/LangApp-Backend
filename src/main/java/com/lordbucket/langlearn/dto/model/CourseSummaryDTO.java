@@ -6,7 +6,8 @@ public record CourseSummaryDTO(
         String identifier,
         String title,
         Language originLanguage,
-        Language targetLanguage
+        Language targetLanguage,
+        boolean isEnrolled
 ) {
 
 }

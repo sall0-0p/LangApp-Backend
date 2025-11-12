@@ -34,4 +34,9 @@ public class Lesson {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Set<LessonTopic> topicComposition;
+
+    @OneToMany(mappedBy = "lesson", cascade = CascadeType.ALL, orphanRemoval = true)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private Set<UserLessonCompletion> completions;
 }

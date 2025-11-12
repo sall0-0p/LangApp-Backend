@@ -6,7 +6,7 @@ public record LessonDTO(
         String identifier,
         String title,
         int orderIndex,
-        boolean finished,
+        boolean completed,
         SectionSummaryDTO section,
         List<TopicSummaryDTO> topics
 ) {

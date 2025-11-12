@@ -54,3 +54,7 @@ Authorization: {{auth_token}}
 GET http://localhost:8080/api/lessons/de-a1-basics-lesson-1/tasks
 Authorization: {{auth_token}}
 
+### ------------------------------------
+### 9. Mark lesson as complete
+POST http://localhost:8080/api/lessons/de-a1-basics-lesson-1/complete
+Authorization: {{auth_token}}
