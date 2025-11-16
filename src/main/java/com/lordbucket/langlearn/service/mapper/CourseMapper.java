@@ -39,16 +39,4 @@ public class CourseMapper {
                 lessonCompletionService.isEnrolledInCourse(user, course)
         );
     }
-
-    public CurriculumDTO getCurriculumDTO(Course course, User user) {
-        return new CurriculumDTO(course.getIdentifier(),
-                course.getTitle(),
-                course.getOriginLanguage(),
-                course.getTargetLanguage(),
-                course.getSections()
-                        .stream()
-                        .map(section -> sectionMapper.getSectionSummaryDTOwLessons(section, user))
-                        .toList()
-        );
-    }
 }

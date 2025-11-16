@@ -72,19 +72,4 @@ public class CourseService {
             return null;
         }
     }
-
-    /**
-     * Returns details about the course (with full list of lessons).
-     */
-    @Transactional
-    public CurriculumDTO getCourseCurriculum(String identifier, User user) {
-        Optional<Course> course = courseRepository.findByIdentifier(identifier);
-
-        // Return course curriculum or null.
-        if (course.isPresent()) {
-            return course.map(course1 -> courseMapper.getCurriculumDTO(course1, user)).orElse(null);
-        } else {
-            return null;
-        }
-    }
 }

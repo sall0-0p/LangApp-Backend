@@ -37,14 +37,7 @@ public class SectionMapper {
         return new SectionSummaryDTO(section.getIdentifier(),
                 section.getTitle(),
                 section.getOrderIndex(),
-                lessonCompletionService.isSectionCompleted(user, section)
-        );
-    }
-
-    public SectionSummaryDTOwLessons getSectionSummaryDTOwLessons(Section section, User user) {
-        return new SectionSummaryDTOwLessons(section.getIdentifier(),
-                section.getTitle(),
-                section.getOrderIndex(),
+                lessonCompletionService.isSectionCompleted(user, section),
                 section.getLessons()
                         .stream()
                         .map(lesson -> lessonMapper.toSummaryDTO(lesson, user))

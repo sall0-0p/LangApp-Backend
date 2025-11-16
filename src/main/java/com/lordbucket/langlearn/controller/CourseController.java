@@ -44,19 +44,4 @@ public class CourseController {
 
         return ResponseEntity.ok(course);
     }
-
-    @GetMapping("/c/{identifier}")
-    public ResponseEntity<CurriculumDTO> getCourseCurriculum(@PathVariable(name = "identifier") String identifier, Authentication authentication) {
-        User user = (User) authentication.getPrincipal();
-        CurriculumDTO curriculum = courseService.getCourseCurriculum(identifier, user);
-
-        // If course not found, return 404.
-        if (curriculum == null) {
-            return ResponseEntity
-                    .notFound()
-                    .build();
-        }
-
-        return ResponseEntity.ok(curriculum);
-    }
 }
