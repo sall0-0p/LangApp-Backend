@@ -49,4 +49,6 @@ public interface CompletionRepository
     @Query("SELECT COUNT(ulc) FROM UserLessonCompletion ulc " +
             "WHERE ulc.user = :user AND ulc.lesson IN :lessons")
     int countCompletedLessonsForUser(@Param("user") User user, @Param("lessons") List<Lesson> lessons);
+
+    List<UserLessonCompletion> getAllByUser(User user);
 }

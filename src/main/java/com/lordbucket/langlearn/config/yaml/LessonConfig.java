@@ -9,6 +9,7 @@ import java.util.List;
 public class LessonConfig {
     private String identifier;
     private String title;
+    private String subtitle;
     private int order;
     @JsonProperty("topicComposition")
     private List<LessonTopicConfig> topicComposition;

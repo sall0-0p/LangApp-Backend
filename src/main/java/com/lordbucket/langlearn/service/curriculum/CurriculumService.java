@@ -52,6 +52,7 @@ public class CurriculumService {
                 });
 
         course.setTitle(config.getTitle());
+        course.setEmoji(config.getEmoji());
         course.setOriginLanguage(Language.valueOf(config.getOriginLanguage().toUpperCase()));
         course.setTargetLanguage(Language.valueOf(config.getTargetLanguage().toUpperCase()));
         course.setActive(true);
@@ -93,6 +94,7 @@ public class CurriculumService {
                 });
 
         lesson.setTitle(config.getTitle());
+        lesson.setSubtitle(config.getSubtitle());
         lesson.setOrderIndex(config.getOrder());
         lesson.setSection(section);
         lessonRepository.save(lesson); // Save first to get an ID

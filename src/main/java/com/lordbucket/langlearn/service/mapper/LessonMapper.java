@@ -24,6 +24,7 @@ public class LessonMapper {
     public LessonDTO toDTO(Lesson lesson, User user) {
         return new LessonDTO(lesson.getIdentifier(),
                 lesson.getTitle(),
+                lesson.getSubtitle(),
                 lesson.getOrderIndex(),
                 // TODO: Replace with finished status tracking.
                 lessonCompletionService.isLessonCompleted(user, lesson),
@@ -39,6 +40,7 @@ public class LessonMapper {
     public LessonSummaryDTO toSummaryDTO(Lesson lesson, User user) {
         return new LessonSummaryDTO(lesson.getIdentifier(),
                 lesson.getTitle(),
+                lesson.getSubtitle(),
                 lesson.getOrderIndex(),
                 // TODO: Replace with finished status tracking.
                 lessonCompletionService.isLessonCompleted(user, lesson)

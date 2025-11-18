@@ -3,12 +3,14 @@ sectionTitle: "Family and Home"
 lessons:
   - identifier: "uk-a1-family-lesson-1"
     title: "My Family"
+    subtitle: "Learn how to address your family"
     order: 1
     topicComposition:
       - topicIdentifier: "uk-a1-family"
         taskCount: 4
   - identifier: "uk-a1-family-lesson-2"
     title: "In the House"
+    subtitle: "Learn about some home items"
     order: 2
     topicComposition:
       - topicIdentifier: "uk-a1-family"

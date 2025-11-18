@@ -3,12 +3,14 @@ sectionTitle: "At the Restaurant"
 lessons:
   - identifier: "de-a1-restaurant-lesson-1"
     title: "Basic Food"
+    subtitle: "Learn different food names"
     order: 1
     topicComposition:
       - topicIdentifier: "de-a1-food-basics"
         taskCount: 5
   - identifier: "de-a1-restaurant-lesson-2"
     title: "Ordering a Meal"
+    subtitle: "Learn how to order a meal"
     order: 2
     topicComposition:
       - topicIdentifier: "de-a1-food-basics"

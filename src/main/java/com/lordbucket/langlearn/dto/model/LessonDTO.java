@@ -5,6 +5,7 @@ import java.util.List;
 public record LessonDTO(
         String identifier,
         String title,
+        String subtitle,
         int orderIndex,
         boolean completed,
         SectionSummaryDTO section,

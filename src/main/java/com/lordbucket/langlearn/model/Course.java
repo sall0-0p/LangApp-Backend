@@ -20,6 +20,9 @@ public class Course {
     private String title;
 
     @Column(nullable = false)
+    private String emoji;
+
+    @Column(nullable = false)
     private boolean active = false;
 
     @Column(nullable = false)

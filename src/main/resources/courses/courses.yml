@@ -1,5 +1,6 @@
 - identifier: "de-a1-en"
   title: "German A1 for English Speakers"
+  emoji: "🇩🇪"
   originLanguage: "ENGLISH"
   targetLanguage: "GERMAN"
   sectionFiles:
@@ -8,6 +9,7 @@
 
 - identifier: "uk-a1-en"
   title: "Ukrainian A1 for English Speakers"
+  emoji: "🇺🇦"
   originLanguage: "ENGLISH"
   targetLanguage: "UKRAINIAN"
   sectionFiles:

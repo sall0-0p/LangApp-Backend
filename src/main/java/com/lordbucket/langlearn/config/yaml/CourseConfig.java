@@ -8,6 +8,7 @@ import java.util.List;
 @Data
 public class CourseConfig {
     private String identifier;
+    private String emoji;
     private String title;
     @JsonProperty("originLanguage")
     private String originLanguage;

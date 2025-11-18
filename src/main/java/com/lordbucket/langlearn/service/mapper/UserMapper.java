@@ -37,7 +37,11 @@ public class UserMapper {
                         .stream()
                         .map(course -> courseMapper.toSummaryDTO(course, user))
                         .toList(),
-                lastLessonDTO
+                lastLessonDTO,
+                completionRepository.getAllByUser(user)
+                        .stream()
+                        .map((c) -> c.getLesson().getIdentifier())
+                        .toList()
         );
     }
 }

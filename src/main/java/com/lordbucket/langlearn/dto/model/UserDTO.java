@@ -10,6 +10,7 @@ public record UserDTO(
         String username,
         String email,
         List<CourseSummaryDTO> listOfEnrolledCourses,
-        LessonSummaryDTO lastCompletedLesson
+        LessonSummaryDTO lastCompletedLesson,
+        List<String> completedLessonIds
 ) {
 }

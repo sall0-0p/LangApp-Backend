@@ -3,12 +3,14 @@ sectionTitle: "Greetings and Basics"
 lessons:
   - identifier: "de-a1-basics-lesson-1"
     title: "First Words"
+    subtitle: "Lets go learn some basic German words!"
     order: 1
     topicComposition:
       - topicIdentifier: "de-a1-greetings"
         taskCount: 5
   - identifier: "de-a1-basics-lesson-2"
     title: "Introducing Yourself"
+    subtitle: "Its time to learn how to say your name!"
     order: 2
     topicComposition:
       - topicIdentifier: "de-a1-greetings"

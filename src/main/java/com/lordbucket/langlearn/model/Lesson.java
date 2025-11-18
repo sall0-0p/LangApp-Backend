@@ -1,7 +1,6 @@
 package com.lordbucket.langlearn.model;
 
 import com.lordbucket.langlearn.model.topic.LessonTopic;
-import com.lordbucket.langlearn.model.topic.Topic;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -19,6 +18,9 @@ public class Lesson {
 
     @Column(nullable = false)
     private String title;
+
+    @Column(nullable = false)
+    private String subtitle;
 
     @Column(nullable = false)
     private String identifier;

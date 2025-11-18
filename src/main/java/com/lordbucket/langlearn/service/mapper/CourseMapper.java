@@ -21,6 +21,7 @@ public class CourseMapper {
     public CourseDTO toDTO(Course course, User user) {
         return new CourseDTO(course.getIdentifier(),
                 course.getTitle(),
+                course.getEmoji(),
                 course.getOriginLanguage(),
                 course.getTargetLanguage(),
                 course.getSections()
@@ -34,6 +35,7 @@ public class CourseMapper {
     public CourseSummaryDTO toSummaryDTO(Course course, User user) {
         return new CourseSummaryDTO(course.getIdentifier(),
                 course.getTitle(),
+                course.getEmoji(),
                 course.getOriginLanguage(),
                 course.getTargetLanguage(),
                 lessonCompletionService.isEnrolledInCourse(user, course)
