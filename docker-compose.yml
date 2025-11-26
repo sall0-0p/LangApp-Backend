@@ -1,0 +1,47 @@
+services:
+  # The Backend Application
+  app:
+    container_name: langapp-backend
+    build: .
+    ports:
+      - "3000:8080"
+    environment:
+      # Database Connection (Overriding localhost)
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5434/${POSTGRES_DB}
+      - SPRING_DATASOURCE_USERNAME=${POSTGRES_USER}
+      - SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
+
+      # App Specific Configs
+      - APP_JWT_SECRET=${JWT_SECRET}
+
+      # Mail Configs
+      - SPRING_MAIL_USERNAME=${MAIL_USERNAME}
+      - SPRING_MAIL_PASSWORD=${MAIL_PASSWORD}
+
+      # AI / Google Cloud Configs
+      - SPRING_AI_VERTEX_AI_GEMINI_PROJECT_ID=${GCP_PROJECT_ID}
+      # Path inside the container to the key file
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/gcp-credentials.json
+    volumes:
+      # Mount the Google Cloud Service Account Key from the host to the container
+      - ./gcp-credentials.json:/app/gcp-credentials.json:ro
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  # The Database
+  postgres:
+    image: postgres:16-alpine
+    container_name: langapp-db
+    environment:
+      - POSTGRES_DB=langdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=2811
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
