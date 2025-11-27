@@ -16,9 +16,10 @@ public class CorsConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         // Must explicitly include the HTTPS variant of the frontend URL
-        configuration.setAllowedOrigins(List.of(
-                "https://langapp.lordbucket.eu"
-        ));
+//        configuration.setAllowedOrigins(List.of(
+//                "https://langapp.lordbucket.eu"
+//        ));
+        configuration.setAllowedOriginPatterns(List.of("*"));
 
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
