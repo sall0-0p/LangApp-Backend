@@ -32,7 +32,7 @@ public class EmailService {
             context.setVariable("username", username);
 
             // Build the URL your user will click
-            String confirmationUrl = "http://localhost:8080/api/auth/confirm?token=" + token;
+            String confirmationUrl = "http://langapp.lordbucket.eu/api/auth/confirm?token=" + token;
             context.setVariable("confirmationUrl", confirmationUrl);
 
             // Process the template

@@ -1,6 +1,7 @@
 HELP.md
 .gradle
 .env
+gemini-keys.json
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -36,3 +37,4 @@ out/
 
 ### VS Code ###
 .vscode/
+/gemini-keys.json

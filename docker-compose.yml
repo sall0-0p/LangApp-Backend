@@ -21,10 +21,10 @@ services:
       # AI / Google Cloud Configs
       - SPRING_AI_VERTEX_AI_GEMINI_PROJECT_ID=${GCP_PROJECT_ID}
       # Path inside the container to the key file
-      - GOOGLE_APPLICATION_CREDENTIALS=/app/gcp-credentials.json
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/gemini-keys.json
     volumes:
       # Mount the Google Cloud Service Account Key from the host to the container
-      - ./gcp-credentials.json:/app/gcp-credentials.json:ro
+      - ./gemini-keys.json:/app/gemini-keys.json:ro
     depends_on:
       - postgres
     restart: unless-stopped
