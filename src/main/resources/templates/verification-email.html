@@ -18,14 +18,14 @@
     Thanks for signing up for our language learning app. Please click the button below to confirm your email address.
   </p>
 
-  <a th:href="${confirmationUrl}" style="display: inline-block; padding: 12px 24px; margin-top: 25px; background-color: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
+  <a th:href="http://langapp.lordbucket.eu/api/auth/confirm?token=${confirmationToken}" style="display: inline-block; padding: 12px 24px; margin-top: 25px; background-color: #2563eb; color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
     Confirm Your Email
   </a>
 
   <p style="font-size: 0.9em; margin-top: 30px; color: #777;">
     If the button doesn't work, copy and paste this link into your browser:
     <br>
-    <span th:text="${confirmationUrl}" style="color: #4b5563; word-break: break-all;">http://placeholder-link.com</span>
+    <span th:text="http://langapp.lordbucket.eu/api/auth/confirm?token=${confirmationToken}" style="color: #4b5563; word-break: break-all;">http://placeholder-link.com</span>
   </p>
 </div>
 </body>
