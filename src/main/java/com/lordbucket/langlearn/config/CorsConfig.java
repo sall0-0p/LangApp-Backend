@@ -17,8 +17,6 @@ public class CorsConfig {
 
         // Must explicitly include the HTTPS variant of the frontend URL
         configuration.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "https://localhost:5173",
                 "https://langapp.lordbucket.eu"
         ));
 
@@ -27,7 +25,7 @@ public class CorsConfig {
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/api/**", configuration);
+        source.registerCorsConfiguration("/**", configuration);
 
         return source;
     }
