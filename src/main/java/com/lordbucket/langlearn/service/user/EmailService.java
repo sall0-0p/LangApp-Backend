@@ -32,7 +32,8 @@ public class EmailService {
             context.setVariable("username", username);
 
             // Build the URL your user will click
-            context.setVariable("confirmationToken", token);
+            String confirmationUrl = "https://langapp.lordbucket.eu/api/auth/confirm?token=" + token;
+            context.setVariable("confirmationUrl", confirmationUrl);
 
             // Process the template
             String htmlContent = templateEngine.process("verification-email", context);
