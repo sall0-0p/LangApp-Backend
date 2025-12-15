@@ -1,84 +1,84 @@
 # Greetings & Courtesies
-- { target: "Hello", origin: "Привіт", type: "INTERJECTION" }
-- { target: "Hi", origin: "Привіт (неформально)", type: "INTERJECTION" }
-- { target: "Good morning", origin: "Доброго ранку", type: "PHRASE" }
-- { target: "Good evening", origin: "Добрий вечір", type: "PHRASE" }
-- { target: "Goodbye", origin: "До побачення", type: "INTERJECTION" }
-- { target: "See you", origin: "Побачимось", type: "PHRASE" }
-- { target: "Have a nice day", origin: "Гарного дня", type: "PHRASE" }
-- { target: "Welcome", origin: "Ласкаво просимо", type: "PHRASE" }
-- { target: "How are you?", origin: "Як справи?", type: "PHRASE" }
-- { target: "I am fine", origin: "У мене все добре", type: "PHRASE" }
-- { target: "Thank you", origin: "Дякую", type: "PHRASE" }
-- { target: "Please", origin: "Будь ласка", type: "PARTICLE" }
-- { target: "Excuse me", origin: "Перепрошую", type: "PHRASE" }
-- { target: "Sorry", origin: "Вибачте", type: "INTERJECTION" }
-- { target: "No problem", origin: "Без проблем", type: "PHRASE" }
+- { "target": "Hello", "origin": "Привіт", "type": "INTERJECTION" }
+- { "target": "Hi", "origin": "Привіт (неформально)", "type": "INTERJECTION" }
+- { "target": "Good morning", "origin": "Доброго ранку", "type": "PHRASE" }
+- { "target": "Good evening", "origin": "Добрий вечір", "type": "PHRASE" }
+- { "target": "Goodbye", "origin": "До побачення", "type": "INTERJECTION" }
+- { "target": "See you", "origin": "Побачимось", "type": "PHRASE" }
+- { "target": "Have a nice day", "origin": "Гарного дня", "type": "PHRASE" }
+- { "target": "Welcome", "origin": "Ласкаво просимо", "type": "PHRASE" }
+- { "target": "How are you?", "origin": "Як справи?", "type": "PHRASE" }
+- { "target": "I am fine", "origin": "У мене все добре", "type": "PHRASE" }
+- { "target": "Thank you", "origin": "Дякую", "type": "PHRASE" }
+- { "target": "Please", "origin": "Будь ласка", "type": "PARTICLE" }
+- { "target": "Excuse me", "origin": "Перепрошую", "type": "PHRASE" }
+- { "target": "Sorry", "origin": "Вибачте", "type": "INTERJECTION" }
+- { "target": "No problem", "origin": "Без проблем", "type": "PHRASE" }
 
-# Common Phrases
-- { target: "Yes", origin: "Так", type: "PARTICLE" }
-- { target: "No", origin: "Ні", type: "PARTICLE" }
-- { target: "I understand", origin: "Я розумію", type: "PHRASE" }
-- { target: "I do not know", origin: "Я не знаю", type: "PHRASE" }
-- { target: "Help", origin: "Допоможіть", type: "VERB" }
-- { target: "What is this?", origin: "Що це?", type: "PHRASE" }
-- { target: "Where is...?", origin: "Де знаходиться...?", type: "PHRASE" }
-- { target: "Good", origin: "Добре", type: "ADJECTIVE" } # Mapped as Phrase/Adj usually
-- { target: "Bad", origin: "Погано", type: "ADJECTIVE" }
+# Common Phrases - "No" and "Yes" MUST be quoted!
+- { "target": "Yes", "origin": "Так", "type": "PARTICLE" }
+- { "target": "No", "origin": "Ні", "type": "PARTICLE" }
+- { "target": "I understand", "origin": "Я розумію", "type": "PHRASE" }
+- { "target": "I do not know", "origin": "Я не знаю", "type": "PHRASE" }
+- { "target": "Help", "origin": "Допоможіть", "type": "VERB" }
+- { "target": "What is this?", "origin": "Що це?", "type": "PHRASE" }
+- { "target": "Where is...?", "origin": "Де знаходиться...?", "type": "PHRASE" }
+- { "target": "Good", "origin": "Добре", "type": "ADJECTIVE" }
+- { "target": "Bad", "origin": "Погано", "type": "ADJECTIVE" }
 
 # Pronouns
-- { target: "I", origin: "Я", type: "PRONOUN" }
-- { target: "You", origin: "Ти / Ви", type: "PRONOUN" }
-- { target: "He", origin: "Він", type: "PRONOUN" }
-- { target: "She", origin: "Вона", type: "PRONOUN" }
-- { target: "It", origin: "Воно (це)", type: "PRONOUN" }
-- { target: "We", origin: "Ми", type: "PRONOUN" }
-- { target: "They", origin: "Вони", type: "PRONOUN" }
-- { target: "My", origin: "Мій", type: "PRONOUN" }
-- { target: "Your", origin: "Твій / Ваш", type: "PRONOUN" }
-- { target: "His", origin: "Його", type: "PRONOUN" }
-- { target: "Her", origin: "Її", type: "PRONOUN" }
-- { target: "Our", origin: "Наш", type: "PRONOUN" }
-- { target: "Their", origin: "Їхній", type: "PRONOUN" }
+- { "target": "I", "origin": "Я", "type": "PRONOUN" }
+- { "target": "You", "origin": "Ти / Ви", "type": "PRONOUN" }
+- { "target": "He", "origin": "Він", "type": "PRONOUN" }
+- { "target": "She", "origin": "Вона", "type": "PRONOUN" }
+- { "target": "It", "origin": "Воно (це)", "type": "PRONOUN" }
+- { "target": "We", "origin": "Ми", "type": "PRONOUN" }
+- { "target": "They", "origin": "Вони", "type": "PRONOUN" }
+- { "target": "My", "origin": "Мій", "type": "PRONOUN" }
+- { "target": "Your", "origin": "Твій / Ваш", "type": "PRONOUN" }
+- { "target": "His", "origin": "Його", "type": "PRONOUN" }
+- { "target": "Her", "origin": "Її", "type": "PRONOUN" }
+- { "target": "Our", "origin": "Наш", "type": "PRONOUN" }
+- { "target": "Their", "origin": "Їхній", "type": "PRONOUN" }
 
 # Family
-- { target: "Mother", origin: "Мати", type: "NOUN" }
-- { target: "Father", origin: "Батько", type: "NOUN" }
-- { target: "Brother", origin: "Брат", type: "NOUN" }
-- { target: "Sister", origin: "Сестра", type: "NOUN" }
-- { target: "Son", origin: "Син", type: "NOUN" }
-- { target: "Daughter", origin: "Дочка", type: "NOUN" }
-- { target: "Grandmother", origin: "Бабуся", type: "NOUN" }
-- { target: "Grandfather", origin: "Дідусь", type: "NOUN" }
-- { target: "Family", origin: "Сім'я", type: "NOUN" }
-- { target: "Parents", origin: "Батьки", type: "NOUN" }
-- { target: "Friend", origin: "Друг", type: "NOUN" }
+- { "target": "Mother", "origin": "Мати", "type": "NOUN" }
+- { "target": "Father", "origin": "Батько", "type": "NOUN" }
+- { "target": "Brother", "origin": "Брат", "type": "NOUN" }
+- { "target": "Sister", "origin": "Сестра", "type": "NOUN" }
+- { "target": "Son", "origin": "Син", "type": "NOUN" }
+- { "target": "Daughter", "origin": "Дочка", "type": "NOUN" }
+- { "target": "Grandmother", "origin": "Бабуся", "type": "NOUN" }
+- { "target": "Grandfather", "origin": "Дідусь", "type": "NOUN" }
+- { "target": "Family", "origin": "Сім'я", "type": "NOUN" }
+- { "target": "Parents", "origin": "Батьки", "type": "NOUN" }
+- { "target": "Friend", "origin": "Друг", "type": "NOUN" }
 
 # Food
-- { target: "Bread", origin: "Хліб", type: "NOUN" }
-- { target: "Water", origin: "Вода", type: "NOUN" }
-- { target: "Milk", origin: "Молоко", type: "NOUN" }
-- { target: "Apple", origin: "Яблуко", type: "NOUN" }
-- { target: "Tea", origin: "Чай", type: "NOUN" }
-- { target: "Coffee", origin: "Кава", type: "NOUN" }
-- { target: "Sandwich", origin: "Бутерброд", type: "NOUN" }
-- { target: "Egg", origin: "Яйце", type: "NOUN" }
-- { target: "Cheese", origin: "Сир", type: "NOUN" }
-- { target: "Meat", origin: "М'ясо", type: "NOUN" }
-- { target: "Fish", origin: "Риба", type: "NOUN" }
-- { target: "Fruit", origin: "Фрукти", type: "NOUN" }
-- { target: "Vegetable", origin: "Овочі", type: "NOUN" }
+- { "target": "Bread", "origin": "Хліб", "type": "NOUN" }
+- { "target": "Water", "origin": "Вода", "type": "NOUN" }
+- { "target": "Milk", "origin": "Молоко", "type": "NOUN" }
+- { "target": "Apple", "origin": "Яблуко", "type": "NOUN" }
+- { "target": "Tea", "origin": "Чай", "type": "NOUN" }
+- { "target": "Coffee", "origin": "Кава", "type": "NOUN" }
+- { "target": "Sandwich", "origin": "Бутерброд", "type": "NOUN" }
+- { "target": "Egg", "origin": "Яйце", "type": "NOUN" }
+- { "target": "Cheese", "origin": "Сир", "type": "NOUN" }
+- { "target": "Meat", "origin": "М'ясо", "type": "NOUN" }
+- { "target": "Fish", "origin": "Риба", "type": "NOUN" }
+- { "target": "Fruit", "origin": "Фрукти", "type": "NOUN" }
+- { "target": "Vegetable", "origin": "Овочі", "type": "NOUN" }
 
 # Colors & Numbers
-- { target: "Red", origin: "Червоний", type: "NOUN" }
-- { target: "Blue", origin: "Синій", type: "NOUN" }
-- { target: "Green", origin: "Зелений", type: "NOUN" }
-- { target: "Yellow", origin: "Жовтий", type: "NOUN" }
-- { target: "Black", origin: "Чорний", type: "NOUN" }
-- { target: "White", origin: "Білий", type: "NOUN" }
-- { target: "One", origin: "Один", type: "NOUN" }
-- { target: "Two", origin: "Два", type: "NOUN" }
-- { target: "Three", origin: "Три", type: "NOUN" }
-- { target: "Four", origin: "Чотири", type: "NOUN" }
-- { target: "Five", origin: "П'ять", type: "NOUN" }
-- { target: "Ten", origin: "Десять", type: "NOUN" }
+- { "target": "Red", "origin": "Червоний", "type": "NOUN" }
+- { "target": "Blue", "origin": "Синій", "type": "NOUN" }
+- { "target": "Green", "origin": "Зелений", "type": "NOUN" }
+- { "target": "Yellow", "origin": "Жовтий", "type": "NOUN" }
+- { "target": "Black", "origin": "Чорний", "type": "NOUN" }
+- { "target": "White", "origin": "Білий", "type": "NOUN" }
+- { "target": "One", "origin": "Один", "type": "NOUN" }
+- { "target": "Two", "origin": "Два", "type": "NOUN" }
+- { "target": "Three", "origin": "Три", "type": "NOUN" }
+- { "target": "Four", "origin": "Чотири", "type": "NOUN" }
+- { "target": "Five", "origin": "П'ять", "type": "NOUN" }
+- { "target": "Ten", "origin": "Десять", "type": "NOUN" }
