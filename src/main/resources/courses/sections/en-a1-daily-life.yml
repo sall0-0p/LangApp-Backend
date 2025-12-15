@@ -1,0 +1,24 @@
+sectionIdentifier: "en-a1-daily-life"
+sectionTitle: "Daily Life / Щоденне життя"
+lessons:
+  - identifier: "en-a1-lesson-4"
+    title: "Family"
+    subtitle: "Talking about family members"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "en-a1-family"
+        taskCount: 6
+  - identifier: "en-a1-lesson-5"
+    title: "Food & Drink"
+    subtitle: "Basic food vocabulary"
+    order: 2
+    topicComposition:
+      - topicIdentifier: "en-a1-food"
+        taskCount: 6
+  - identifier: "en-a1-lesson-6"
+    title: "Colors & Numbers"
+    subtitle: "Describing things"
+    order: 3
+    topicComposition:
+      - topicIdentifier: "en-a1-colors-numbers"
+        taskCount: 6

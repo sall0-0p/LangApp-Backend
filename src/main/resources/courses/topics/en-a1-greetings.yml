@@ -1,0 +1,23 @@
+identifier: "en-a1-greetings"
+title: "Greetings"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "Hello", origin: "Привіт" }
+  - { target: "Hi", origin: "Привіт (неформально)" }
+  - { target: "Good morning", origin: "Доброго ранку" }
+  - { target: "Good evening", origin: "Добрий вечір" }
+  - { target: "Goodbye", origin: "До побачення" }
+  - { target: "See you", origin: "Побачимось" }
+  - { target: "How are you?", origin: "Як справи?" }
+  - { target: "Thank you", origin: "Дякую" }
+  - { target: "Please", origin: "Будь ласка" }
+  - { target: "Excuse me", origin: "Перепрошую" }
+relatedTopics: []
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.5
+  TRANSLATE_WORD_FROM_MC: 0.5
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 4
+  TRANSLATE_WORD_FROM_MC: 4

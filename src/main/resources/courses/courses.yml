@@ -15,3 +15,12 @@
   sectionFiles:
     - "uk-a1-conversation.yml"
     - "uk-a1-family-home.yml"
+
+- identifier: "en-a1-uk"
+  title: "English A1 for Ukrainians"
+  emoji: "🇺🇸"
+  originLanguage: "UKRAINIAN"
+  targetLanguage: "ENGLISH"
+  sectionFiles:
+    - "en-a1-basics.yml"
+    - "en-a1-daily-life.yml"

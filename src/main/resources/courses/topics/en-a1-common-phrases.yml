@@ -1,0 +1,22 @@
+identifier: "en-a1-common-phrases"
+title: "Common Phrases"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "Yes", origin: "Так" }
+  - { target: "No", origin: "Ні" }
+  - { target: "I understand", origin: "Я розумію" }
+  - { target: "I do not know", origin: "Я не знаю" }
+  - { target: "Help", origin: "Допоможіть" }
+  - { target: "What is this?", origin: "Що це?" }
+  - { target: "Where is...?", origin: "Де знаходиться...?" }
+  - { target: "No problem", origin: "Без проблем" }
+relatedTopics:
+  - "en-a1-greetings"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.4
+  TRANSLATE_WORD_FROM_MC: 0.6
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 3
+  TRANSLATE_WORD_FROM_MC: 5

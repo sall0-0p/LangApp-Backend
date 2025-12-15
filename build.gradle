@@ -62,8 +62,6 @@ dependencies {
 
     // ChatGPT
     implementation("com.openai:openai-java:4.7.1")
-
-
 }
 
 dependencyManagement {

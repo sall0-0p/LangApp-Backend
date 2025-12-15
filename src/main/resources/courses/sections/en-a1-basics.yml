@@ -1,0 +1,26 @@
+sectionIdentifier: "en-a1-basics"
+sectionTitle: "Basics / Основи"
+lessons:
+  - identifier: "en-a1-lesson-1"
+    title: "Greetings"
+    subtitle: "Saying hello and goodbye"
+    order: 1
+    topicComposition:
+      - topicIdentifier: "en-a1-greetings"
+        taskCount: 6
+  - identifier: "en-a1-lesson-2"
+    title: "Pronouns"
+    subtitle: "I, You, He, She..."
+    order: 2
+    topicComposition:
+      - topicIdentifier: "en-a1-pronouns"
+        taskCount: 6
+  - identifier: "en-a1-lesson-3"
+    title: "Common Phrases"
+    subtitle: "Yes, No, and simple questions"
+    order: 3
+    topicComposition:
+      - topicIdentifier: "en-a1-common-phrases"
+        taskCount: 5
+      - topicIdentifier: "en-a1-greetings"
+        taskCount: 2 # Revision

@@ -1,0 +1,25 @@
+identifier: "en-a1-food"
+title: "Food"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "Bread", origin: "Хліб" }
+  - { target: "Water", origin: "Вода" }
+  - { target: "Milk", origin: "Молоко" }
+  - { target: "Apple", origin: "Яблуко" }
+  - { target: "Tea", origin: "Чай" }
+  - { target: "Coffee", origin: "Кава" }
+  - { target: "Sandwich", origin: "Бутерброд" }
+  - { target: "Cheese", origin: "Сир" }
+  - { target: "Meat", origin: "М'ясо" }
+  - { target: "Fish", origin: "Риба" }
+  - { target: "Fruit", origin: "Фрукти" }
+  - { target: "Vegetable", origin: "Овочі" }
+relatedTopics: []
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.7
+  TRANSLATE_WORD_FROM_MC: 0.3
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 5
+  TRANSLATE_WORD_FROM_MC: 3

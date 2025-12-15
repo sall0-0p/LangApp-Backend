@@ -1,0 +1,23 @@
+identifier: "en-a1-family"
+title: "Family"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "Mother", origin: "Мати" }
+  - { target: "Father", origin: "Батько" }
+  - { target: "Brother", origin: "Брат" }
+  - { target: "Sister", origin: "Сестра" }
+  - { target: "Son", origin: "Син" }
+  - { target: "Daughter", origin: "Дочка" }
+  - { target: "Family", origin: "Сім'я" }
+  - { target: "Parents", origin: "Батьки" }
+  - { target: "Friend", origin: "Друг" }
+relatedTopics:
+  - "en-a1-pronouns"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.5
+  TRANSLATE_WORD_FROM_MC: 0.5
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 4
+  TRANSLATE_WORD_FROM_MC: 4

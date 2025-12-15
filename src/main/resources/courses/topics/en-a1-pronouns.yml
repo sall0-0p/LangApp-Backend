@@ -1,0 +1,24 @@
+identifier: "en-a1-pronouns"
+title: "Pronouns"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "I", origin: "Я" }
+  - { target: "You", origin: "Ти / Ви" }
+  - { target: "He", origin: "Він" }
+  - { target: "She", origin: "Вона" }
+  - { target: "We", origin: "Ми" }
+  - { target: "They", origin: "Вони" }
+  - { target: "My", origin: "Мій" }
+  - { target: "Your", origin: "Твій / Ваш" }
+  - { target: "His", origin: "Його" }
+  - { target: "Her", origin: "Її" }
+relatedTopics:
+  - "en-a1-family"
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.6
+  TRANSLATE_WORD_FROM_MC: 0.4
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 5
+  TRANSLATE_WORD_FROM_MC: 3

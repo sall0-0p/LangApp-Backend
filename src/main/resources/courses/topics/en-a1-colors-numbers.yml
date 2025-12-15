@@ -1,0 +1,25 @@
+identifier: "en-a1-colors-numbers"
+title: "Colors & Numbers"
+language: ENGLISH
+originLanguage: UKRAINIAN
+level: A1
+vocabulary:
+  - { target: "Red", origin: "Червоний" }
+  - { target: "Blue", origin: "Синій" }
+  - { target: "Green", origin: "Зелений" }
+  - { target: "Yellow", origin: "Жовтий" }
+  - { target: "Black", origin: "Чорний" }
+  - { target: "White", origin: "Білий" }
+  - { target: "One", origin: "Один" }
+  - { target: "Two", origin: "Два" }
+  - { target: "Three", origin: "Три" }
+  - { target: "Four", origin: "Чотири" }
+  - { target: "Five", origin: "П'ять" }
+  - { target: "Ten", origin: "Десять" }
+relatedTopics: []
+taskTypeWeights:
+  TRANSLATE_WORD_TO_MC: 0.5
+  TRANSLATE_WORD_FROM_MC: 0.5
+generationPlan:
+  TRANSLATE_WORD_TO_MC: 5
+  TRANSLATE_WORD_FROM_MC: 5
