@@ -14,8 +14,7 @@ vocabulary:
   - { target: "Your", origin: "Твій / Ваш" }
   - { target: "His", origin: "Його" }
   - { target: "Her", origin: "Її" }
-relatedTopics:
-  - "en-a1-family"
+relatedTopics: []
 taskTypeWeights:
   TRANSLATE_WORD_TO_MC: 0.6
   TRANSLATE_WORD_FROM_MC: 0.4
