@@ -7,14 +7,14 @@
     - "de-a1-basics.yml"
     - "de-a1-restaurant.yml"
 
-- identifier: "uk-a1-en"
-  title: "Ukrainian A1 for English Speakers"
-  emoji: "🇺🇦"
-  originLanguage: "ENGLISH"
-  targetLanguage: "UKRAINIAN"
-  sectionFiles:
-    - "uk-a1-conversation.yml"
-    - "uk-a1-family-home.yml"
+#- identifier: "uk-a1-en"
+#  title: "Ukrainian A1 for English Speakers"
+#  emoji: "🇺🇦"
+#  originLanguage: "ENGLISH"
+#  targetLanguage: "UKRAINIAN"
+#  sectionFiles:
+#    - "uk-a1-conversation.yml"
+#    - "uk-a1-family-home.yml"
 
 - identifier: "en-a1-uk"
   title: "English A1 for Ukrainians"
