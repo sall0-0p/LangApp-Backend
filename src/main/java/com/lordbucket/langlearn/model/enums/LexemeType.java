@@ -7,4 +7,5 @@ public enum LexemeType {
     INTERJECTION,
     PARTICLE,
     PRONOUN,
+    ADJECTIVE,
 }
